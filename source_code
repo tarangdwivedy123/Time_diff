@@ -1,0 +1,45 @@
+#include <iostream>
+#include<cstdlib>
+
+using namespace std;
+
+int main()
+{   int t,h[20]={0},m[20]={0},hr1=0,hr2=0,hr,min;
+    char c;
+    cin>>t;
+    t=t*2;
+    for(int i=0;i<t;i++)
+    {
+        cin>>h[i]>>c>>m[i];
+    }
+
+    {
+    for(int i=0;i<t;i=i+2)
+    {
+    if(h[i]>=00&&h[i]<24&&h[i+1]>=00&&h[i+1]<24&&m[i]>=00&&m[i]<60&&m[i+1]>=00&&m[i+1]<60)
+    {
+     hr1=(h[i]*3600+m[i]*60);
+     hr2=(h[i+1]*3600+m[i+1]*60);
+     hr=abs(hr1-hr2);
+     min = abs(hr1-hr2)%3600;
+     if((hr/3600)>=00&&(hr/3600)<10)
+     {
+         cout<<"0"<<hr/3600<<":";
+     }
+    else
+        cout<<hr/3600<<":";
+     if(min / 60 >= 0 && min / 60 < 10)
+     {
+         cout << "0" << min/60 << endl;
+     }
+     else
+        cout << min / 60 << endl;
+    }
+    if(h[i]<00||h[i]>=24||h[i+1]<00||h[i+1]>=24||m[i]<00||m[i]>=60||m[i+1]<00||m[i+1]>=60)
+        {
+        cout<<"Invalid Input"<<endl;
+        }
+    }
+    }
+    return 0;
+}
