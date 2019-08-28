@@ -18,6 +18,8 @@ Output Format
 
 Time Difference in hours:minutes format, or Invalid Input.
 
+
+
 Sample Input 0
 
 2
@@ -27,8 +29,11 @@ Sample Input 0
 15:45
 Sample Output 0
 
+
 Invalid Input
 07:30
+
+
 Explanation 0
 For the first test case, 23:60 is invalid so we print Invalid Input.
 For the second test case, 15:45 to 23:15 takes 7 hours and 30 minutes, so we print 07:30
