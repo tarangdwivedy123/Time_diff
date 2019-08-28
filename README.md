@@ -1,6 +1,5 @@
 PROBLEM STATEMENT:
 
-
 When we set alarms on our phones we see a small message showing the time left for the alarm to ring. If you sleep around 11PM, then you get a  message saying "Alarm set for 7 hours and 30 minutes from now." 
 
 This problem is just like that message.
